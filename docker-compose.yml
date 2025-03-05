@@ -1,0 +1,22 @@
+networks:
+  pgvector_net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.17.0.0/24
+
+services:
+  pgvector:
+    image: pgvector/pgvector:pg17
+    container_name: pgvector
+    restart: always
+    shm_size: 128mb
+    ports:
+      - "5432:5432"
+    env_file:
+      - .env
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+    networks:
+      pgvector_net:
+        ipv4_address: 172.17.0.3
