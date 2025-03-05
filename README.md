@@ -12,8 +12,8 @@ This project sets up a PostgreSQL database with the pgvector extension using Doc
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/ibnumardini/pgvector-docker.git
-    cd pgvector
+    git clone https://github.com/ibnumardini/pgvector-docker.git pgvector-docker
+    cd pgvector-docker
     ```
 
 2. Create a `.env` file in the project root directory and add the necessary environment variables:
