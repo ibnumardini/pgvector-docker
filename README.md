@@ -12,7 +12,7 @@ This project sets up a PostgreSQL database with the pgvector extension using Doc
 1. Clone the repository:
 
     ```sh
-    git clone <repository-url>
+    git clone https://github.com/ibnumardini/pgvector-docker.git
     cd pgvector
     ```
 
